@@ -8,6 +8,8 @@ namespace HW7
 {
     static class Program
     {
+        //фывфывфывфывфывфывфывфывфыв
+        //asdasdasdkljaklfjsdfsdf
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
