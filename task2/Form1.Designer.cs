@@ -71,9 +71,9 @@ namespace task2
             this.CounterLbl.AutoSize = true;
             this.CounterLbl.Location = new System.Drawing.Point(12, 270);
             this.CounterLbl.Name = "CounterLbl";
-            this.CounterLbl.Size = new System.Drawing.Size(92, 13);
+            this.CounterLbl.Size = new System.Drawing.Size(85, 13);
             this.CounterLbl.TabIndex = 3;
-            this.CounterLbl.Text = "Больше/Меньше";
+            this.CounterLbl.Text = "Actions Count: 0";
             this.CounterLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.CounterLbl.Visible = false;
             // 

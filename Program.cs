@@ -6,23 +6,12 @@ using System.Windows.Forms;
 
 namespace HW7
 {
-    class Doubler
-    {
-        //public int val=0;
-        public static int RandVal()
-        {
-            Random val = new Random();
-            return val.Next(0, 100);
-        }
-        public static int PlusVal(int val) => val + 1;
-        public static int MultiVal(int val)=> val *= 2;
-        public static bool ResultCheck(int res,int curr)
-        {
-            if (res == curr) return true;
-            else return false;
-        }
-       
-    }
+    /*
+     * а) Добавить в программу «Удвоитель» подсчёт количества отданных команд удвоителю.
+       б) Добавить меню и команду «Играть». При нажатии появляется сообщение, какое число должен получить игрок. Игрок должен получить это число за минимальное количество ходов.
+       в) *Добавить кнопку «Отменить», которая отменяет последние ходы. Используйте обобщенный класс Stack.
+Вся логика игры должна быть реализована в классе с удвоителем.
+     */
     static class Program
     {       
         /// <summary>
