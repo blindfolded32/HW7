@@ -32,6 +32,7 @@ namespace task2
             this.MLLbl = new System.Windows.Forms.Label();
             this.StartBtn = new System.Windows.Forms.Button();
             this.InputBtn = new System.Windows.Forms.Button();
+            this.CounterLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // MLLbl
@@ -65,11 +66,23 @@ namespace task2
             this.InputBtn.Visible = false;
             this.InputBtn.Click += new System.EventHandler(this.InputBtn_Click);
             // 
+            // CounterLbl
+            // 
+            this.CounterLbl.AutoSize = true;
+            this.CounterLbl.Location = new System.Drawing.Point(12, 270);
+            this.CounterLbl.Name = "CounterLbl";
+            this.CounterLbl.Size = new System.Drawing.Size(92, 13);
+            this.CounterLbl.TabIndex = 3;
+            this.CounterLbl.Text = "Больше/Меньше";
+            this.CounterLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.CounterLbl.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(510, 307);
+            this.Controls.Add(this.CounterLbl);
             this.Controls.Add(this.InputBtn);
             this.Controls.Add(this.StartBtn);
             this.Controls.Add(this.MLLbl);
@@ -85,6 +98,7 @@ namespace task2
         private System.Windows.Forms.Label MLLbl;
         private System.Windows.Forms.Button StartBtn;
         private System.Windows.Forms.Button InputBtn;
+        private System.Windows.Forms.Label CounterLbl;
     }
 }
 

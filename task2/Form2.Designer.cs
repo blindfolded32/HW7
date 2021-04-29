@@ -76,9 +76,8 @@ namespace task2
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox NumBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button ChkBtn;
+        public System.Windows.Forms.Button ChkBtn;
+        public System.Windows.Forms.TextBox NumBox;
     }
 }
