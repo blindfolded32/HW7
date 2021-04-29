@@ -29,19 +29,20 @@ namespace task2
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.MLLbl = new System.Windows.Forms.Label();
             this.StartBtn = new System.Windows.Forms.Button();
+            this.InputBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // MLLbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(230, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Больше/Меньше";
-            this.label1.Visible = false;
+            this.MLLbl.AutoSize = true;
+            this.MLLbl.Location = new System.Drawing.Point(209, 35);
+            this.MLLbl.Name = "MLLbl";
+            this.MLLbl.Size = new System.Drawing.Size(92, 13);
+            this.MLLbl.TabIndex = 0;
+            this.MLLbl.Text = "Больше/Меньше";
+            this.MLLbl.Visible = false;
             // 
             // StartBtn
             // 
@@ -51,14 +52,27 @@ namespace task2
             this.StartBtn.TabIndex = 1;
             this.StartBtn.Text = "Start";
             this.StartBtn.UseVisualStyleBackColor = true;
+            this.StartBtn.Click += new System.EventHandler(this.StartBtn_Click);
+            // 
+            // InputBtn
+            // 
+            this.InputBtn.Location = new System.Drawing.Point(187, 254);
+            this.InputBtn.Name = "InputBtn";
+            this.InputBtn.Size = new System.Drawing.Size(135, 29);
+            this.InputBtn.TabIndex = 2;
+            this.InputBtn.Text = "Input Number";
+            this.InputBtn.UseVisualStyleBackColor = true;
+            this.InputBtn.Visible = false;
+            this.InputBtn.Click += new System.EventHandler(this.InputBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(510, 307);
+            this.Controls.Add(this.InputBtn);
             this.Controls.Add(this.StartBtn);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.MLLbl);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -68,8 +82,9 @@ namespace task2
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label MLLbl;
         private System.Windows.Forms.Button StartBtn;
+        private System.Windows.Forms.Button InputBtn;
     }
 }
 

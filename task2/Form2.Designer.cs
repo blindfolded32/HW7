@@ -29,17 +29,17 @@ namespace task2
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.NumBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ChkBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // NumBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(80, 66);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(108, 20);
-            this.textBox1.TabIndex = 0;
+            this.NumBox.Location = new System.Drawing.Point(80, 66);
+            this.NumBox.Name = "NumBox";
+            this.NumBox.Size = new System.Drawing.Size(108, 20);
+            this.NumBox.TabIndex = 0;
             // 
             // label1
             // 
@@ -58,6 +58,7 @@ namespace task2
             this.ChkBtn.TabIndex = 2;
             this.ChkBtn.Text = "OK";
             this.ChkBtn.UseVisualStyleBackColor = true;
+            this.ChkBtn.Click += new System.EventHandler(this.ChkBtn_Click);
             // 
             // Form2
             // 
@@ -66,7 +67,7 @@ namespace task2
             this.ClientSize = new System.Drawing.Size(291, 159);
             this.Controls.Add(this.ChkBtn);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.NumBox);
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);
@@ -76,7 +77,7 @@ namespace task2
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox NumBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button ChkBtn;
     }

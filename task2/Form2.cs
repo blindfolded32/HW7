@@ -16,5 +16,10 @@ namespace task2
         {
             InitializeComponent();
         }
+
+        private void ChkBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
