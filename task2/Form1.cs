@@ -16,5 +16,18 @@ namespace task2
         {
             InitializeComponent();
         }
+
+        private void InputBtn_Click(object sender, EventArgs e)
+        {
+            Form2 f2= new Form2();
+            f2.Show();
+        }
+
+        private void StartBtn_Click(object sender, EventArgs e)
+        {
+            StartBtn.Hide();
+            InputBtn.Show();
+            MLLbl.Show();
+        }
     }
 }
