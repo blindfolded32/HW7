@@ -12,6 +12,7 @@ namespace task2
 {
     public partial class Form2 : Form
     {
+        
         public Form2()
         {
             InitializeComponent();
@@ -19,7 +20,8 @@ namespace task2
 
         private void ChkBtn_Click(object sender, EventArgs e)
         {
-
+            GuessNumber.INval = Convert.ToInt32(NumBox.Text);
+            Dispose();
         }
     }
 }
