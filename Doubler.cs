@@ -16,6 +16,16 @@ namespace HW7
             if (res == curr) return true;
             else return false;
         }
-       
+
+        public static int ResSearch(int val)
+        {
+            int counter = 0;
+            while (val > 1)
+            {
+                if (val % 2 == 0) { counter++; val /= 2; }
+                else { counter++; val--; }
+            }
+            return counter;
+        }
     }
 }
