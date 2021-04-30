@@ -29,7 +29,7 @@ namespace HW7
         {
             InitializeComponent();
         }
-        int val = 0, counter = 0, Nval;
+        int val = 1, counter = 0, Nval;
         Stack<int> ActStack = new Stack<int>();
         private void StartBtn_Click(object sender, EventArgs e)
         {
@@ -42,6 +42,9 @@ namespace HW7
             Nval = Doubler.RandVal();
             NeedLbl.Text = $"Need to get: {Nval}";
             CancelBtn.Show();
+            CompActLbl.Show();
+            RestartBtn.Show();
+            CompActLbl.Text = $"Computer Actions count: {Doubler.ResSearch(Nval)}";
             
         }
 
@@ -52,6 +55,15 @@ namespace HW7
             ValLbl.Text = $"Current value is {val}";
             CounterLbl.Text = $"Actions count {counter++} ";
             if (Doubler.ResultCheck(Nval, val)) MessageBox.Show($"YOU DID IT!!!!\n Actions count {counter}");
+        }
+
+        private void RestartBtn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Try again");
+            val = 1;
+            counter = 0;
+            ValLbl.Text = $"Current value is {val}";
+            CounterLbl.Text = $"Actions count {counter} ";
         }
 
         private void MultiBtn_Click(object sender, EventArgs e)

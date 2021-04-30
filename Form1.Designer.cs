@@ -36,6 +36,8 @@ namespace HW7
             this.ValLbl = new System.Windows.Forms.Label();
             this.CounterLbl = new System.Windows.Forms.Label();
             this.NeedLbl = new System.Windows.Forms.Label();
+            this.CompActLbl = new System.Windows.Forms.Label();
+            this.RestartBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // StartBtn
@@ -111,11 +113,34 @@ namespace HW7
             this.NeedLbl.Text = "Needed value";
             this.NeedLbl.Visible = false;
             // 
+            // CompActLbl
+            // 
+            this.CompActLbl.AutoSize = true;
+            this.CompActLbl.Location = new System.Drawing.Point(45, 307);
+            this.CompActLbl.Name = "CompActLbl";
+            this.CompActLbl.Size = new System.Drawing.Size(121, 13);
+            this.CompActLbl.TabIndex = 7;
+            this.CompActLbl.Text = "Computer Actions Count";
+            this.CompActLbl.Visible = false;
+            // 
+            // RestartBtn
+            // 
+            this.RestartBtn.Location = new System.Drawing.Point(502, 271);
+            this.RestartBtn.Name = "RestartBtn";
+            this.RestartBtn.Size = new System.Drawing.Size(75, 23);
+            this.RestartBtn.TabIndex = 8;
+            this.RestartBtn.Text = "Restart";
+            this.RestartBtn.UseVisualStyleBackColor = true;
+            this.RestartBtn.Visible = false;
+            this.RestartBtn.Click += new System.EventHandler(this.RestartBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(665, 339);
+            this.Controls.Add(this.RestartBtn);
+            this.Controls.Add(this.CompActLbl);
             this.Controls.Add(this.NeedLbl);
             this.Controls.Add(this.CounterLbl);
             this.Controls.Add(this.ValLbl);
@@ -139,6 +164,8 @@ namespace HW7
         private System.Windows.Forms.Label ValLbl;
         private System.Windows.Forms.Label CounterLbl;
         private System.Windows.Forms.Label NeedLbl;
+        private System.Windows.Forms.Label CompActLbl;
+        private System.Windows.Forms.Button RestartBtn;
     }
 }
 
