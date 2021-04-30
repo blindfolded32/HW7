@@ -24,8 +24,8 @@ namespace task2
             f2.ShowDialog();
             f2.Close();
             if (GuessNumber.INval == val) { MessageBox.Show($"HOORAY in {count} tries");}
-            if (GuessNumber.INval > val) { MessageBox.Show("Try lesser"); count++; CounterLbl.Text= $"Actions count: {count}"; }
-            else {MessageBox.Show("Try greater"); count++; CounterLbl.Text = $"Actions count: {count}"; }
+            if (GuessNumber.INval > val) { MessageBox.Show("Try lesser"); count++; CounterLbl.Text= $"Actions count: {count}"; MLLbl.Text = $"Надо меньше {GuessNumber.INval}"; }
+            else {MessageBox.Show("Try greater"); count++; CounterLbl.Text = $"Actions count: {count}"; MLLbl.Text = $"Надо больше {GuessNumber.INval}"; }
 
         }
         private void StartBtn_Click(object sender, EventArgs e)
