@@ -27,6 +27,7 @@ a) Для ввода данных от человека используется
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            /////123123123123123123123123123123
         }
     }
 }
